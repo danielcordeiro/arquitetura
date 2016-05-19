@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.codehaus.jackson.map.annotate.JsonView;
 
@@ -12,6 +13,7 @@ import br.com.dsgti.JsonViews;
 
 @SuppressWarnings("serial")
 @javax.persistence.Entity
+@Table(name = "news_entry", schema = "public")
 public class NewsEntry implements Entity {
 
 	@Id

@@ -8,7 +8,7 @@
 	<name>arquitetura</name>
 
 	<properties>
-		<version.org.springframework.security>4.1.0.RELEASE</version.org.springframework.security>
+		<version.org.springframework.security>4.0.4.RELEASE</version.org.springframework.security>
 		<version.org.springframework>4.2.5.RELEASE</version.org.springframework>
 		<version.com.sun.jersey.contribs>1.19.1</version.com.sun.jersey.contribs>
 		<version.org.hibernate>4.2.21.Final</version.org.hibernate>
@@ -159,6 +159,12 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901-1.jdbc4</version>
 		</dependency>
 	</dependencies>
 </project>

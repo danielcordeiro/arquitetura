@@ -62,12 +62,6 @@
 	
 	<bean id="userDao" class="br.com.dsgti.dao.JpaUserDao">
 	</bean>
-	
-	<bean id="dataBaseInitializer" class="br.com.dsgti.dao.DataBaseInitializer" init-method="initDataBase">
-		<constructor-arg ref="userDao" />
-		<constructor-arg ref="newsEntryDao" />
-		<constructor-arg ref="passwordEncoder" />
-	</bean>
 
 	<!--
 		INIT REST COMPONENTS 
